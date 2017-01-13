@@ -60,7 +60,7 @@ _sm_build() {
 }
 
 _sm_push() {
-    _sm_ssh 'docker tag stevemostovoy/stevemostovoy.me && docker push stevemostovoy/stevemostovoy.me'
+    _sm_ssh docker push stevemostovoy/stevemostovoy.me
 }
 
 _sm_pull() {
