@@ -1,0 +1,11 @@
+stevemostovoy.me:
+  image: stevemostovoy/stevemostovoy.me
+  ports:
+    - "80:80"
+
+# TODO: 1) Finish LetsEncrypt implementation
+#letsencrypt:
+#  image: quay.io/letsencrypt/letsencrypt:latest
+#  volumes:
+#    - "/var/ssl:/var/ssl"
+#  command: certonly --webroot -w /var/ssl -d stevemostovoy.me -m $SSL_EMAIL --agree-tos
