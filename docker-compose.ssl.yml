@@ -5,4 +5,3 @@ letsencrypt:
     - "/etc/letsencrypt:/etc/letsencrypt"
     - "/var/lib/letsencrypt:/var/lib/letsencrypt"
   command: certonly --webroot -w /var/www -d stevemostovoy.me -m $SSL_EMAIL --agree-tos
-  

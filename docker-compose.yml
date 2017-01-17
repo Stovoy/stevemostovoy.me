@@ -5,6 +5,6 @@ stevemostovoy.me:
     - "443:443"
   volumes:
     - "/var/www:/www"
-    - "/etc/ssl/certs:/etc/ssl/certs"
-    - "/etc/letsencrypt/archive/stevemostovoy.me:/ssl/archive/stevemostovoy.me"
-    - "/etc/letsencrypt/live/stevemostovoy.me:/ssl/live/stevemostovoy.me"
+    - "$SSL_DIR_PREFIX/etc/ssl/certs:/etc/ssl/certs"
+    - "$SSL_DIR_PREFIX/etc/letsencrypt/archive/stevemostovoy.me:/ssl/archive/stevemostovoy.me"
+    - "$SSL_DIR_PREFIX/etc/letsencrypt/live/stevemostovoy.me:/ssl/live/stevemostovoy.me"
