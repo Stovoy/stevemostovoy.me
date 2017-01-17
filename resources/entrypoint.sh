@@ -1,3 +1,4 @@
 #!/bin/sh -e
 
-/usr/sbin/nginx -c /app/resources/nginx.conf -p /app/
+mkdir -p /www/logs
+/usr/sbin/nginx -c /app/resources/nginx.conf -p /www

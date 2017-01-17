@@ -1,0 +1,8 @@
+letsencrypt:
+  image: quay.io/letsencrypt/letsencrypt:latest
+  volumes:
+    - "/var/www:/var/www"
+    - "/etc/letsencrypt:/etc/letsencrypt"
+    - "/var/lib/letsencrypt:/var/lib/letsencrypt"
+  command: certonly --webroot -w /var/www -d stevemostovoy.me -m $SSL_EMAIL --agree-tos
+  
